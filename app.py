@@ -1,6 +1,15 @@
+import os
 from flask import Flask
 
+
 app = Flask(__name__)
+
+
+print(app.config['DEBUG'])
+@app.route('/')
+def hello_world():
+    return "Hello, World!"
+
 
 @app.route('/<name>')
 def hello(name):
