@@ -5,7 +5,7 @@ class Result(db.Model):
     __tablename__ = 'results'
 
     id = db.Column(db.Integer,primary_key=True)
-    url = db.column(db.String())
+    url = db.Column(db.String())
     result_all = db.Column(JSON)
     result_no_stop_words = db.Column(JSON)
 
@@ -16,4 +16,3 @@ class Result(db.Model):
 
     def __repr__(self):
         return f'<id {self.id}>'
-    
