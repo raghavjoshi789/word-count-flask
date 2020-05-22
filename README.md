@@ -5,7 +5,7 @@
         - It takes ***url*** of any site form input.
         - Dislaying counts of words. 
     - ### Backend
-        - In backend it scrape words from url and using ***requests*** and _BeautifulSoup_ packages.
+        - In backend it scrape words from url and using ***requests*** and ***BeautifulSoup*** packages.
         - Then using ***nltk-punkt*** tokenizer it tokenize the words ( converting to single words) and filter ***stop words*** ( e.g. If,then,i,me etc. ) using list of ***stop words*** from ***nltk-corpora***.
         - Then using ***collections.Counter*** it gets count of indivisual words  
 
